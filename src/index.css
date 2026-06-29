@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #000000;
+  --color-red-imp: #C8103C;   /* Risograph red — darkened for WCAG 2.1 AA contrast (5.5:1 on paper) */
+  --color-paper: #FAF7F2;     /* Off-white paper background */
+
+  --font-sans: 'system-ui', 'Arial', sans-serif;
+  --font-mono: ui-monospace, 'Courier New', monospace;
+}
+
+/* Base resets consistent with zine aesthetic */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-black);
+  font-family: var(--font-sans);
+}
+
+/* Dither grain overlay — subtle noise texture for risograph/zine feel (BRD-01) */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect x='0' y='0' width='1' height='1' fill='%23000'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%23000'/%3E%3C/svg%3E");
+  background-size: 4px 4px;
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 9999;
+}
