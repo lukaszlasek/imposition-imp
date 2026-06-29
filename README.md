@@ -68,7 +68,6 @@ v1 in active development (~88% complete). Roadmap:
 
 1. **Core imposition** — saddle-stitch MVP ✅
 2. **Multi-signature & duplex calibration** — in progress
-3. **Illustrated guides & brand** — planned (illustrated fold/binding tutorials starring the imp)
 
 ## License
 
