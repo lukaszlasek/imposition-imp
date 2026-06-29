@@ -20,7 +20,6 @@ Imposition tools are either buried inside expensive desktop software or assume a
 - 🎯 **Duplex calibration** — X/Y offset (mm) to correct home-printer front/back drift, with a printable calibration sheet
 - 🌀 **Creep compensation** — shift inner sheets toward the spine for thick booklets
 - ⚠️ **Smart page-count handling** — warns when pages don't divide by 4 and lets you add blanks or proceed
-- 🦇 **Bold, high-contrast visual identity** — black + red, heavy dither, and a punk imp mascot
 - 🔒 **Privacy-first** — fully client-side; a CSP-hardened single-file build that even runs from `file://`
 
 ## How it works
